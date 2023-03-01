@@ -2,6 +2,6 @@ Hello Harinder!
 
 This project was made by: Group 20
 
-Matthew
-Antonio
-Sam
+- Matthew
+- Sam
+- Antonio
