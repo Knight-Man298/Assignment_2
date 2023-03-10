@@ -1,16 +1,14 @@
-﻿@page "/counter"
-
+﻿@page "/Flights"
+@FlightsGrid
 <h1>Counter</h1>
 
 <p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-@code {
-    private int currentCount = 0;
+@code{
+    //<Grid Rowdefinitions ="Auto, Auto, Auto, Auto , Auto , Auto, Auto, Auto, Auto , *, *, 50 " />//
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+    //<label Text = "Flight Finder" Grid.Row="0" Grid.Column="2" Grid.Columnspan="4" />//
+
 }
