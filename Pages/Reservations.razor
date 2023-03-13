@@ -2,21 +2,37 @@
 
 @using Assignment_2.Data
 
-<h1>Reservations</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Code</th>
-                <th>Airline</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<div class="container">
+    <h1 class="text-center">Reservations Finder</h1>
+    <div class="row" >
+        <div class="col-3">
+            Code:
+           <input class="form-control" type="text"/>
+        </div>
+        <div class="col-3">
+            Airline:
+            <input class="form-control" type="text" />
+        </div>
+        <div class="col-3">
+            Name:
+            <input class="form-control" type="text" />
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">Find Reservations</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Reservations</h1>
+        <div class="row">
+            <div class="col-12" >
+                <input class="form-control" type="text" />
+            </div>
+        </div>
+    </div>
+   </div>
 
     @code {
         
     }
-}
+
