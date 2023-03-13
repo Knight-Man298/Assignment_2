@@ -5,7 +5,8 @@
     text-align: center;
  }
 
- button {
-     background-color: blue;
-     
- }
+.find-flights {
+    color: white;
+    background-color: navy;
+    border: groove 1px navy;
+}

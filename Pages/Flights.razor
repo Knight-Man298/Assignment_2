@@ -1,23 +1,25 @@
 ﻿@page "/flights"
 <h3>Flights</h3>
 <div class="row">
-	<div class="col">From:</div>
-	<div class="col">
-		<input class="form-control" type="text" />
-	</div>
-	<div class="col">To:</div>
-	<div class="col">
-		<input class="form-control" type="text" />
-	</div>
-	<div class="col">Day:</div>
-	<div class="col">
+	<div class="col-3">
+		From:
 		<input class="form-control" type="text"/>
 	</div>
-	<div class="col">
-		<input class="form-control" type="button"/>
+
+	<div class="col-3">
+		To:
+		<input class="form-control" type="text" />
 	</div>
 
-</div>
-@code {
+	<div class="col-3">
+		Day:
+		<input class="form-control" type="text" />
+	</div>
 
-}
+	<div class="col-3">
+		<button type="button" class="find-flights">Find Flights</button>
+	</div>
+
+
+
+</div>
