@@ -6,13 +6,26 @@ using System.Threading.Tasks;
 
 namespace Assignment_2.Data
 {
-    internal class Reservations : Flights 
+    public class Reservations 
     {
-        public string reservationcode;
-        public string name;
-        public string citizenship;
-        public bool status;
+        private string reservationcode;
+        private string name;
+        private string citizenship;
+        private bool status; 
 
 
+        public string Reservationcode { get => reservationcode; set => reservationcode = value; }
+        public string Name { get => name; set => name = value; }
+        public string Citizenship { get => citizenship; set => citizenship = value; }
+        public bool Status { get => status; set => status = value; }
+
+        public Reservations(string reservationcode, string name, string citizenship, bool status)
+        {
+            this.reservationcode = reservationcode;
+            this.name = name;
+            this.citizenship = citizenship;
+            this.status = status;
+
+        }
     }
 }
