@@ -1,12 +1,13 @@
-﻿body {
-    
-}
- h3 {
+﻿h2 {
     text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 23px;
  }
 
-.find-flights {
-    color: white;
-    background-color: navy;
-    border: groove 1px navy;
+.btn {
+    margin-top: 23px;
+    width: 300px;
 }
