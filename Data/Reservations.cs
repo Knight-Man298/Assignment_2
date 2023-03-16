@@ -37,10 +37,11 @@ namespace Assignment_2.Data
         public bool Status { get => status; set => status = value; }
 
        public static void MakeReservation( object Flights,  string xnames,  string xcitizenship )
+
         {
             if (Flights != null && xnames != null && xcitizenship != null)  {
                 // make reservation code before // 
-                Reservations new = Reservations(Flights.flightcode, Flights.airlineCode, Flights.cost, xnames, xcitizenship, status);
+                Reservations new = Reservations(Flights.FlightCode, Flights.AirlineName, Flights.Cost, xnames, xcitizenship, status);
                     //add this into a reservations list and possibly new txt file // 
             }
             else if (Flights.avaliableseats == 0)
@@ -54,7 +55,7 @@ namespace Assignment_2.Data
 
         public static void FindReservation(string rescode, string airline, string name)
         {          
-                if (rescode == Reservations.reservationcode || airline == Reservations.airline || name == Reservations.name)
+                if (rescode == Reservations.ReservationCode || airline == Reservations.AirlineName || name == Reservations.Name)
                 {
                     // display reservation// 
                 }
