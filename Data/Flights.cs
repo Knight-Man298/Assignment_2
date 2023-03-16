@@ -34,8 +34,8 @@ public class Flights
     public int TotalSeats { get => totalSeats; set => totalSeats = value; }
     public double Price { get => price; set => price = value; }
 
-    public static void findFlight(EventArgs e, string name)
+    public static void findFlight( string OriginAirport , string destination, string day)
     {
-
+        
     }
 }
