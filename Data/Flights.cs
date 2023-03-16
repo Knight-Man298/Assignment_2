@@ -1,5 +1,5 @@
 namespace Assignment_2.Data;
-
+@
 public class Flights
 {
     public string flightCode;
@@ -35,8 +35,8 @@ public class Flights
     public int TotalSeats { get => totalSeats; set => totalSeats = value; }
     public double Price { get => price; set => price = value; }
 
-    public void FindFlight()
+    public static void findFlight(EventArgs e, string name)
     {
-        Console.WriteLine("spacefiller");
+
     }
 }
