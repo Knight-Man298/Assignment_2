@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Media.AppBroadcasting;
-
+//using Windows.Media.AppBroadcasting;
 namespace Assignment_2.Data
 {
     public class Reservations 
@@ -39,7 +38,7 @@ namespace Assignment_2.Data
        public static void MakeReservation( object Flights,  string xnames,  string xcitizenship )
 
         {
-            if (Flights != null && xnames != null && xcitizenship != null)  {
+            /*if (Flights != null && xnames != null && xcitizenship != null)  {
                 // make reservation code before // 
                 Reservations new = Reservations(Flights.FlightCode, Flights.AirlineName, Flights.Cost, xnames, xcitizenship, status);
                     //add this into a reservations list and possibly new txt file // 
@@ -59,7 +58,7 @@ namespace Assignment_2.Data
                 {
                     // display reservation// 
                 }
-                else throw new Exception();    
+                else throw new Exception();    */
         }
         
     

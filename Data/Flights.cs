@@ -1,6 +1,6 @@
 using Microsoft.Extensions.FileSystemGlobbing;
 
-namespace Assignment_2.Pages;
+namespace Assignment_2.Data;
 public class Flight
 {
     public string flightCode;
@@ -41,12 +41,12 @@ public class Flight
     public static void findFlight(string originairport, string destination, string day)
     {
 
-        foreach (Flight flight in Flights.flights)
+      //  foreach (Flight flight in Flights.flights)
         {
-            if (flight.OriginAirport == originairport);
-            if (flight.Destination == destination) ;
-            if (flight.Day == day) ;
-            Flights.flights.Add(flight);
+       //     if (flight.OriginAirport == originairport);
+       //     if (flight.Destination == destination) ;
+       //     if (flight.Day == day) ;
+            //Flights.flights.Add(flight);
         }
     }
 }
