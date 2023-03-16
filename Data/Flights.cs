@@ -13,7 +13,7 @@ public class Flight
     public int totalSeats;
     public double price;
 
-    public Flight(string flightcode, string airlinename, string originairport, string destination, string day, string time, int seats, int totalseats, double price)
+    public Flight(string flightcode, string airlinename, string originairport, string destination, string day, string time, int availableseats, int totalseats, double price)
     {
         flightCode = flightcode;
         airlineName = airlinename;
@@ -21,7 +21,7 @@ public class Flight
         this.destination = destination;
         this.day = day;
         this.time = time;
-        availableSeats = seats;
+        availableSeats = availableseats; 
         totalSeats = totalseats;
         this.price = price;
     }

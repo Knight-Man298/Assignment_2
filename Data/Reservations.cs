@@ -44,7 +44,8 @@ namespace Assignment_2.Data
                 Reservations new = Reservations(Flights.FlightCode, Flights.AirlineName, Flights.Cost, xnames, xcitizenship, status);
                     //add this into a reservations list and possibly new txt file // 
             }
-            else if (Flights.avaliableseats == 0)
+        
+            else if (Flights.availableSeats == 0)
             {
                 throw new Exception("UNAVAIBLE");
             }
@@ -61,7 +62,7 @@ namespace Assignment_2.Data
                 }
                 else throw new Exception();    
         }
-        
+
     
     }
 
