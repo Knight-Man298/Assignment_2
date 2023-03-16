@@ -66,3 +66,24 @@
 		<button type="button" class="btn  btn-primary">Submit</button>
 	</div>
 </div>
+
+@code {
+	public static void Main()
+	{
+
+	}
+
+	public void addFlight()
+	{
+		string[] path = File.ReadAllLines("C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv");
+		foreach (string appliance in path)
+		{
+			string[] position = appliance.Split(",");
+			string identification = position[0];
+			char firstChar = identification[0];
+
+			Flights flight = new Flights();
+			
+		}
+	}
+}
