@@ -1,5 +1,4 @@
 namespace Assignment_2.Data;
-@
 public class Flights
 {
     public string flightCode;
