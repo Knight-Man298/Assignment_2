@@ -47,8 +47,6 @@ public class Flight
             if (flight.Destination == destination) ;
             if (flight.Day == day) ;
             Flights.flights.Add(flight);
-        
-
         }
     }
 }
