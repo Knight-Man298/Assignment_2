@@ -33,6 +33,11 @@ namespace Assignment_2.Data
         public int Cost { get => cost; set => cost = value; }
         public string Name { get => name; set => name = value; }
         public string Citizenship { get => citizenship; set => citizenship = value; }
-        public bool Status { get => status; set => status = value; }
+        public bool Status { get => status; set => status = value; } 
+
+
+
+
     }
+
 }
