@@ -34,8 +34,16 @@ public class Flights
     public int TotalSeats { get => totalSeats; set => totalSeats = value; }
     public double Price { get => price; set => price = value; }
 
-    public static void findFlight( string OriginAirport , string destination, string day)
+
+
+    public static void findFlight( string originairport , string destination, string day)
     {
-        
+        List<Flights>matchingflights = new List<Flights>();
+
+       foreach(Flights flights in matchingflights) 
+        {
+            if (flights.OriginAirport == originairport) ;
+        }  
+
     }
 }
