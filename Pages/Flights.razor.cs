@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileSystemGlobbing;
+
 namespace Assignment_2.Pages;
 public class Flight
 {
@@ -41,11 +43,12 @@ public class Flight
 
         foreach (Flight flight in Flights.flights)
         {
-            if (flight.OriginAirport == originairport)
-            {
+            if (flight.OriginAirport == originairport);
+            if (flight.Destination == destination) ;
+            if (flight.Day == day) ;
+            Flights.flights.Add(flight);
+        
 
-            }
         }
-
     }
 }
