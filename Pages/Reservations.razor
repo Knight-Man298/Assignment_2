@@ -72,6 +72,24 @@
 
     @code {
         public static List<Reservations> ReservationsList = new List<Reservations>();
-       // Console.WriteLine( );
+       
+
+          public static void MakeReservation(  Flight x ,  string xnames,  string xcitizenship )
+
+        {
+            if ( x != null && xnames != null && xcitizenship != null)  {
+                // make reservation code before // 
+                Reservations newres = new Reservations (rescode, x.FlightCode, x.AirlineName, x.price , xnames, xcitizenship, true);
+                    //add this into a reservations list and possibly new txt file // 
+            }
+        
+            else if (x.availableSeats == 0)
+            {
+                throw new Exception("UNAVAIBLE");
+            }
+            else {
+                throw new Exception("fill all fields");
+                    };
+        }
     }
 
