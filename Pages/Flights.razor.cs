@@ -1,5 +1,5 @@
 namespace Assignment_2.Pages;
-public class Flights
+public class Flight
 {
     public string flightCode;
     public string airlineName;
@@ -11,7 +11,7 @@ public class Flights
     public int totalSeats;
     public double price;
 
-    public Flights(string flightcode, string airlinename, string originairport, string destination, string day, string time, int seats, int totalseats, double price)
+    public Flight(string flightcode, string airlinename, string originairport, string destination, string day, string time, int seats, int totalseats, double price)
     {
         flightCode = flightcode;
         airlineName = airlinename;
@@ -24,8 +24,8 @@ public class Flights
         this.price = price;
     }
 
-    public string Flightcode { get => flightCode; set => flightCode = value; }
-    public string AirLineName { get => airlineName; set => airlineName = value; }
+    public string FlightCode { get => flightCode; set => flightCode = value; }
+    public string AirlineName { get => airlineName; set => airlineName = value; }
     public string OriginAirport { get => originAirport; set => originAirport = value; }
     public string Destination { get => destination; set => destination = value; }
     public string Day { get => day; set => day = value; }
@@ -38,14 +38,13 @@ public class Flights
 
     public static void findFlight(string originairport, string destination, string day)
     {
-        List<Flights> matchingflights = new List<Flights>();
 
-        foreach (Flights flights in matchingflights)
+        foreach (Flight flight in Flights.flights)
         {
-            if (flights.OriginAirport == originairport)
+            if (flight.OriginAirport == originairport)
             {
 
-            }   
+            }
         }
 
     }

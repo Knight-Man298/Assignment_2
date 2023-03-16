@@ -68,6 +68,9 @@
 </div>
 
 @code {
+
+	public static List<Flight> flights = new List<Flight>();
+
 	public static void Main()
 	{
 
@@ -76,14 +79,24 @@
 	public void addFlight()
 	{
 		string[] path = File.ReadAllLines("C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv");
-		foreach (string appliance in path)
+		foreach (string flight in path)
 		{
-			string[] position = appliance.Split(",");
+			string[] position = flight.Split(",");
 			string identification = position[0];
 			char firstChar = identification[0];
 
-			Flights flight = new Flights();
-			
+			Flight newflight = new Flight(
+				position[0], 
+				position[1], 
+				position[2], 
+				position[3], 
+				position[4], 
+				position[5], 
+				int.Parse(position[6]), 
+				int.Parse(position[7]), 
+				double.Parse(position[8]));
+
+				flights.Add(newflight);
 		}
 	}
 }
