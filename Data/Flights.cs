@@ -1,6 +1,7 @@
+using Assignment_2.Pages;
 using Microsoft.Extensions.FileSystemGlobbing;
 
-namespace Assignment_2.Pages;
+namespace Assignment_2.Data;
 public class Flight
 {
     public string flightCode;
@@ -21,7 +22,7 @@ public class Flight
         this.destination = destination;
         this.day = day;
         this.time = time;
-        availableSeats = availableseats; 
+        availableSeats = availableseats;
         totalSeats = totalseats;
         this.price = price;
     }
@@ -40,13 +41,6 @@ public class Flight
 
     public static void findFlight(string originairport, string destination, string day)
     {
-
-        foreach (Flight flight in Flights.flights)
-        {
-            if (flight.OriginAirport == originairport);
-            if (flight.Destination == destination);
-            if (flight.Day == day);
-            Flights.flights.Add(flight);
-        }
+        
     }
 }

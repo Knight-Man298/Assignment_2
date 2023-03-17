@@ -1,5 +1,5 @@
 ﻿@page "/flights"
-@using Assignment_2.Pages
+@using Assignment_2.Data;
 <h2>Flights</h2>
 <div class="row">
 	<div class="col-3">
@@ -33,31 +33,31 @@
 <div class="row">
 		Flight Code:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly />
 	</div>
 		Airline:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly />
 	</div>
 		Day:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly />
 	</div>
 		Time:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly/>
 	</div>
 		Cost:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly/>
 	</div>
 		Name:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly />
 	</div>
 		Citizenship:
 	<div class="col-12">
-		<input class="form-control" type="text" />
+		<input class="form-control" type="text" readonly />
 	</div>
 </div>
 
@@ -66,36 +66,3 @@
 		<button type="button" class="btn  btn-primary">Submit</button>
 	</div>
 </div>
-
-@code {
-
-	public static List<Flight> flights = new List<Flight>();
-
-
-
-	public void addFlight()
-	{
-		string[] path = File.ReadAllLines("C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv");
-		foreach (string flight in path)
-		{
-			string[] position = flight.Split(",");
-			string identification = position[0];
-			char firstChar = identification[0];
-
-			Flight newflight = new Flight(
-				position[0], 
-				position[1], 
-				position[2], 
-				position[3], 
-				position[4], 
-				position[5], 
-				int.Parse(position[6]), 
-				int.Parse(position[7]), 
-				double.Parse(position[8]));
-
-				flights.Add(newflight);
-
-				Console.WriteLine(newflight);
-		}
-	}
-}
