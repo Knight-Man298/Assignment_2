@@ -1,5 +1,5 @@
 ﻿@page "/Reservations"
-@using Assignment_2.Data 
+@using Assignment_2.Pages 
 
 <div class="container-one">
     <h1 class="text-center">Reservations Finder</h1>
@@ -79,6 +79,7 @@
         {
             if ( x != null && xnames != null && xcitizenship != null)  {
                 // make reservation code before // 
+               string rescode = ReservationCodeGenerator(); 
                 Reservations newres = new Reservations (rescode, x.FlightCode, x.AirlineName, x.price , xnames, xcitizenship, true);
                     //add this into a reservations list and possibly new txt file // 
             }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using Assignment_2.Data;
+using Assignment_2.Pages;
 
 namespace Assignment_2;
 
