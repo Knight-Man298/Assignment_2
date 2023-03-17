@@ -42,7 +42,11 @@ namespace Assignment_2.Pages
                 {
                     // display reservation// 
                 }
-                else throw new Exception();    
+                else
+            {
+                Console.WriteLine( "error");
+                //expecption
+            }  
         }
 
         private static readonly Random random = new Random();
