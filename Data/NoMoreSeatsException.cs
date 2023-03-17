@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Assignment_2.Data
 {
-    internal class NoMoreSeatsExecption
+    public class NoMoreSeatsException : Exception
     {
+        public NoMoreSeatsException() : base("No more seats available") { }
+
+        public NoMoreSeatsException(string message) : base(message) { }
+
+   
     }
 }

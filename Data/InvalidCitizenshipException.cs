@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Assignment_2.Data
 {
-    internal class MakeReservations
+    public class  InvalidCitizenshipException : Exception
     {
+        public InvalidCitizenshipException() : base("Invalid Citizenship") { }  
+        
+
+        public InvalidCitizenshipException(string message) : base(message) { }
     }
 }

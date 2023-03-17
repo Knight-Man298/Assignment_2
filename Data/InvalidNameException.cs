@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Assignment_2.Data
 {
-    internal class InvalidNameException
+    public class InvalidNameException : Exception
     {
+        public InvalidNameException() : base("Invalid Name") { }
+
+        public InvalidNameException(string message) : base(message) { }
     }
 }
