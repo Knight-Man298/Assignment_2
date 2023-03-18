@@ -2,7 +2,7 @@ using Assignment_2.Pages;
 using Microsoft.Extensions.FileSystemGlobbing;
 
 namespace Assignment_2.Data;
-public class Flight
+public class FlightsCode
 {
     public string flightCode;
     public string airlineName;
@@ -14,7 +14,7 @@ public class Flight
     public int totalSeats;
     public double price;
 
-    public Flight(string flightcode, string airlinename, string originairport, string destination, string day, string time, int availableseats, int totalseats, double price)
+    public FlightsCode(string flightcode, string airlinename, string originairport, string destination, string day, string time, int availableSeats, double price)
     {
         FlightCode = flightcode;
         AirlineName = airlinename;
@@ -22,8 +22,7 @@ public class Flight
         Destination = destination;
         Day = day;
         Time = time;
-        AvailableSeats = availableseats;
-        TotalSeats = totalseats;
+		AvailableSeats = availableSeats;
         Price = price;
     }
 
