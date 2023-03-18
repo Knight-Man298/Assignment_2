@@ -55,7 +55,7 @@ namespace Assignment_2.Pages
         {
             char randomletter = (char)random.Next('A', 'Z' + 1);
             int randomnumber = random.Next(1000,10000);
-            return string.Format("{0}{1:D4}",  randomletter,randomnumber); 
+            return string.Format("{0}{1:D4}", randomletter, randomnumber); 
         }
 
     }

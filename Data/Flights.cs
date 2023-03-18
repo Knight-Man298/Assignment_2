@@ -16,15 +16,15 @@ public class Flight
 
     public Flight(string flightcode, string airlinename, string originairport, string destination, string day, string time, int availableseats, int totalseats, double price)
     {
-        flightCode = flightcode;
-        airlineName = airlinename;
-        originAirport = originairport;
-        this.destination = destination;
-        this.day = day;
-        this.time = time;
-        availableSeats = availableseats;
-        totalSeats = totalseats;
-        this.price = price;
+        FlightCode = flightcode;
+        AirlineName = airlinename;
+        OriginAirport = originairport;
+        Destination = destination;
+        Day = day;
+        Time = time;
+        AvailableSeats = availableseats;
+        TotalSeats = totalseats;
+        Price = price;
     }
 
     public string FlightCode { get => flightCode; set => flightCode = value; }
