@@ -80,7 +80,7 @@
         {
             if ( flight != null && flightName != null && citizenship != null)  {
                 // make reservation code before // 
-               string rescode = ReservationCodeGenerator(); 
+                string rescode = ReservationCodeGenerator(); 
                 Reservations newres = new Reservations (rescode, flight.FlightCode, flight.AirlineName, flight.Price , flightName, citizenship, true);
                     //add this into a reservations list and possibly new txt file // 
             }

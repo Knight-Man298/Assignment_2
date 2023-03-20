@@ -9,7 +9,8 @@ namespace Assignment_2.Data
 {
 	internal class FlightManager
 	{
-		public const string FLIGHTS_PATH = "C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv";
+		//"C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv"
+		public const string FLIGHTS_PATH = "C:\\Users\\Anton\\OneDrive\\Desktop\\OOP2\\Assignment2\\Resources\\Project Data\flights.csv";
 		public static List<FlightsCode> flights = new List<FlightsCode>();
 		public FlightManager() 
 		{

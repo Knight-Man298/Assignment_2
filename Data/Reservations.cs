@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //using Windows.Media.AppBroadcasting;
-namespace Assignment_2.Pages
+namespace Assignment_2.Data
 {
     public partial class Reservations 
     {
