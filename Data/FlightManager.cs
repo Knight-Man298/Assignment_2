@@ -9,9 +9,9 @@ namespace Assignment_2.Data
 {
 	internal class FlightManager
 	{
-		//"C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv"
-		public const string FLIGHTS_PATH = "C:\\Users\\Anton\\OneDrive\\Desktop\\OOP2\\Assignment2\\Resources\\Project Data\flights.csv";
-		public static List<FlightsCode> flights = new List<FlightsCode>();
+		public const string FLIGHTS_PATH = "C:\\Users\\msimm\\Desktop\\Semester 2\\OOP2\\Assignments\\Assignment_2\\Assignment_2\\Resources\\Project Data\\flights.csv";
+		//public const string FLIGHTS_PATH = "C:\\Users\\Anton\\OneDrive\\Desktop\\OOP2\\Assignment2\\Resources\\Project Data\flights.csv";
+		public static List<Flight> flights = new List<Flight>();
 		public FlightManager() 
 		{
 			AddFlight();
@@ -19,27 +19,25 @@ namespace Assignment_2.Data
 
 		public void AddFlight()
 		{
-			FlightsCode flight;
 			foreach (string line in File.ReadLines(FLIGHTS_PATH))
 			{
-				string[] parameter = FLIGHTS_PATH.Split(",");
-				
-				string code = parameter[0];
-				string airport = parameter[1];
-				string origin = parameter[2];
-				string destination = parameter[3];
-				string dayOfWeek = parameter[4];
-				string departureTime = parameter[5];
-				int seatsAvailable = int.Parse(parameter[6]);
-				double price = double.Parse(parameter[7]);
+				string[] parameter = line.Split(",");
 
-				flight = new FlightsCode(code, airport, origin, destination, dayOfWeek, departureTime, seatsAvailable, price);
+				Flight flight = new Flight();
+				flight.FlightCode = parameter[0];
+				flight.AirlineName = parameter[1];
+				flight.OriginAirport = parameter[2];
+				flight.Destination = parameter[3];
+				flight.Day = parameter[4];
+				flight.Time = parameter[5];
+				flight.AvailableSeats = int.Parse(parameter[6]);
+				flight.Price = double.Parse(parameter[7]);
 
 				flights.Add(flight);
 			}
 		}
 
-		public static List<FlightsCode> GetFlights()
+		public static List<Flight> GetFlights()
 		{
 			return flights;
 		}
